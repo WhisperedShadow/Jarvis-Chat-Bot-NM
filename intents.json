@@ -1,0 +1,397 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Yo",
+        "What's up?",
+        "Anyone online?"
+      ],
+      "responses": [
+        "Hey there! :)",
+        "Hello, thanks for dropping by!",
+        "Hi! How can I assist you today?",
+        "Hey! I'm here to help. What do you need?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later",
+        "Talk to you soon"
+      ],
+      "responses": [
+        "See you later! Thanks for visiting :>",
+        "Have a great day ahead!",
+        "Goodbye! Come back soon :)"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot!",
+        "I appreciate it"
+      ],
+      "responses": [
+        "Happy to help! :)",
+        "Any time!",
+        "You're welcome!",
+        "Glad I could assist :>"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Tell me about this app",
+        "What technologies are used?",
+        "What does this chatbot do?",
+        "What is this project?",
+        "What do you have here?"
+      ],
+      "responses": [
+        "This chatbot is built using Python, NLTK, and a simple neural network model using PyTorch. It's a basic AI assistant trained to understand simple queries and give appropriate responses. Ideal for beginners exploring natural language processing!"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Make me laugh"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison 🦬.",
+        "Why don't programmers like nature? Too many bugs."
+      ]
+    },
+    {
+      "tag": "team",
+      "patterns": [
+        "Who created this?",
+        "Who made this chatbot?",
+        "Who are the developers?",
+        "Tell me about the team",
+        "Who are you guys?"
+      ],
+      "responses": [
+        "We are a team of four passionate developers currently in our 3rd year of Computer Science and Engineering (B.E) at Jeppiaar Engineering College, affiliated with Anna University.",
+        "Our team includes:\n - **Durai Pon Singh**: Skilled in full-stack web development, AI, and creative design. \n- **Harish**: A dedicated coder and problem-solver focused on backend and databases.\n- **Eswar**: Passionate about AI, ML, and making things work smoothly.\n- **Hariprasad**: Tech enthusiast who loves exploring new frameworks and improving UI/UX.\n\nTogether, we are building smart, fun, and useful digital tools."
+      ]
+    },
+    {
+      "tag": "anime",
+      "patterns": [
+        "What anime do you recommend?",
+        "Tell me about anime",
+        "Do you watch anime?",
+        "What's your favorite anime?",
+        "Anime suggestions?"
+      ],
+      "responses": [
+        "If you're into action, you should try 'Attack on Titan' or 'My Hero Academia'. For something emotional, 'Your Lie in April' and 'Clannad' are great choices. If you're looking for a classic, 'Naruto' and 'One Piece' are always solid picks! :)",
+        "Anime is an amazing form of storytelling! Whether you're into intense action, fantasy, or slice-of-life, there's something for everyone. Some popular anime include 'Demon Slayer', 'Death Note', and 'Dragon Ball Z'.",
+        "How about watching 'Steins;Gate' for an intriguing sci-fi story or 'Fullmetal Alchemist: Brotherhood' for an epic adventure?"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like?",
+        "Is it sunny today?",
+        "How's the weather?",
+        "Do I need an umbrella today?"
+      ],
+      "responses": [
+        "I can check the weather for you. Just let me know your location! ",
+        "I don't have real-time data, but you can always check the weather using apps like Weather.com or AccuWeather."
+      ]
+    },
+    {
+      "tag": "movie",
+      "patterns": [
+        "What movie should I watch?",
+        "Any movie recommendations?",
+        "What's a good movie?",
+        "Do you like movies?"
+      ],
+      "responses": [
+        "If you love action, check out 'Inception' or 'The Dark Knight'. For a good laugh, 'The Hangover' is a classic. If you're in the mood for something emotional, 'The Pursuit of Happyness' is a great pick! :)",
+        "You can't go wrong with 'The Shawshank Redemption' or 'Forrest Gump'. Both are all-time greats!"
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "What music do you like?",
+        "Can you recommend some music?",
+        "What are some good songs?",
+        "Do you listen to music?"
+      ],
+      "responses": [
+        "I don't listen to music, but I can suggest genres! If you're into rock, 'Queen' and 'AC/DC' are legends. If you're into pop, try 'Billie Eilish' or 'Ariana Grande'. :)",
+        "For some chill vibes, try listening to artists like 'Tame Impala' or 'Mac DeMarco'. If you like EDM, 'Calvin Harris' and 'Avicii' are amazing!"
+      ]
+    },
+    {
+      "tag": "motivational",
+      "patterns": [
+        "I need some motivation",
+        "Give me a motivational quote",
+        "I'm feeling down",
+        "Help me stay motivated"
+      ],
+      "responses": [
+        "'The only way to do great work is to love what you do.' - Steve Jobs ",
+        "'Success is not final, failure is not fatal: It is the courage to continue that counts.' - Winston Churchill"
+      ]
+    },
+    {
+      "tag": "tech",
+      "patterns": [
+        "What new tech should I learn?",
+        "Tell me about the latest tech trends",
+        "What's the latest in tech?",
+        "What tech do you recommend?"
+      ],
+      "responses": [
+        "Currently, AI, blockchain, and quantum computing are gaining massive attention. If you're interested, learning AI and ML is a great idea! :)",
+        "Cloud computing, edge computing, and the rise of IoT devices are also super exciting areas in tech right now."
+      ]
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "What are some fun hobbies?",
+        "Tell me about hobbies",
+        "What do you like to do for fun?",
+        "Got any hobby suggestions?"
+      ],
+      "responses": [
+        "If you like to be creative, drawing, painting, or playing an instrument can be a lot of fun. Reading and hiking are great hobbies too! ",
+        "You could try photography, gardening, or even writing. It's all about finding something that makes you happy!"
+      ]
+    },
+    {
+      "tag": "quotes",
+      "patterns": [
+        "Give me a quote",
+        "Can you share a quote?",
+        "Tell me a motivational quote",
+        "Do you know a cool quote?"
+      ],
+      "responses": [
+        "'Believe you can and you're halfway there.' - Theodore Roosevelt",
+        "'The future belongs to those who believe in the beauty of their dreams.' - Eleanor Roosevelt"
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "How can I stay healthy?",
+        "What are some health tips?",
+        "How can I improve my fitness?",
+        "What should I eat for better health?"
+      ],
+      "responses": [
+        "Make sure to eat a balanced diet, exercise regularly, and get enough sleep. Stay hydrated and avoid stress where possible! ",
+        "Incorporating fruits, vegetables, and protein into your meals, along with regular workouts, can help maintain your health."
+      ]
+    },
+    {
+      "tag": "travel",
+      "patterns": [
+        "Where should I travel?",
+        "Tell me some travel destinations",
+        "What are the best places to visit?",
+        "Can you suggest a good holiday spot?"
+      ],
+      "responses": [
+        "If you're into beaches, try the Maldives or Hawaii. For culture, places like Kyoto, Japan, or Rome, Italy, are amazing. Looking for adventure? Consider Patagonia or the Swiss Alps! ",
+        "Check out Paris for its historical beauty, New Zealand for stunning landscapes, or Iceland for its unique nature."
+      ]
+    },
+    {
+      "tag": "food",
+      "patterns": [
+        "What should I eat today?",
+        "Can you suggest some food?",
+        "What's a good meal idea?",
+        "What are some tasty dishes?"
+      ],
+      "responses": [
+        "If you're in the mood for something comforting, try some pasta or pizza! For a healthy option, go for a salad with some grilled chicken. ",
+        "Sushi, tacos, or a hearty steak might hit the spot. Don't forget to try some desserts like cheesecake or brownies too!"
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "Tell me about sports",
+        "What are the latest sports news?",
+        "What's your favorite sport?",
+        "Can you suggest a sport to play?"
+      ],
+      "responses": [
+        "Sports like football, cricket, basketball, and tennis are popular worldwide. If you're into fitness, try swimming or running!",
+        "Some of the most exciting sports today are football (soccer), basketball, and cricket. Each has its own unique appeal."
+      ]
+    },
+    {
+      "tag": "sports_teams",
+      "patterns": [
+        "Which is the best football team?",
+        "Who won the last World Cup?",
+        "Tell me about Manchester United",
+        "Which basketball team is the best?"
+      ],
+      "responses": [
+        "In football, teams like Barcelona, Real Madrid, and Manchester United are global icons. In basketball, the NBA has powerhouses like the Los Angeles Lakers and the Boston Celtics.",
+        "The latest FIFA World Cup was won by France in 2018. Brazil and Germany are also considered some of the best teams historically."
+      ]
+    },
+    {
+      "tag": "tamilnadu_history",
+      "patterns": [
+        "Tell me about Tamil Nadu history",
+        "What is Tamil Nadu known for?",
+        "When was Tamil Nadu formed?",
+        "Who were the ancient rulers of Tamil Nadu?"
+      ],
+      "responses": [
+        "Tamil Nadu has a rich history, known for its ancient Dravidian culture, temples, and dynasties. It was home to several powerful rulers like the Cholas, Pandyas, and the Pallavas.",
+        "The history of Tamil Nadu dates back to over 2,000 years. It's famous for its ancient art, literature, and the remarkable architectural wonders of temples like Brihadeeswarar Temple."
+      ]
+    },
+    {
+      "tag": "tamilnadu_culture",
+      "patterns": [
+        "What is Tamil culture like?",
+        "Tell me about Tamil Nadu traditions",
+        "What is the significance of Tamil festivals?",
+        "How is Tamil culture celebrated?"
+      ],
+      "responses": [
+        "Tamil Nadu is known for its rich culture, including classical dance forms like Bharatanatyam, music, and literature. The state celebrates many festivals like Pongal, Tamil New Year, and Deepavali with great enthusiasm.",
+        "Tamil culture has deep-rooted traditions in music, dance, and literature. It's famous for its ancient language, Tamil, and the festivals are often associated with harvest, art, and spirituality."
+      ]
+    },
+    {
+      "tag": "science",
+      "patterns": [
+        "Tell me about science",
+        "What is the latest discovery in science?",
+        "Can you explain quantum physics?",
+        "How does gravity work?"
+      ],
+      "responses": [
+        "Science is the study of the physical and natural world through observation and experiment. It includes fields like physics, biology, chemistry, and earth sciences.",
+        "The latest breakthroughs include advances in quantum computing and space exploration. For example, the James Webb Space Telescope is sending back incredible images of distant galaxies!"
+      ]
+    },
+    {
+      "tag": "quantum_physics",
+      "patterns": [
+        "What is quantum physics?",
+        "Can you explain quantum mechanics?",
+        "How do particles behave in quantum physics?",
+        "What is quantum entanglement?"
+      ],
+      "responses": [
+        "Quantum physics deals with the behavior of particles at the smallest scales. It explores phenomena like wave-particle duality and quantum entanglement.",
+        "In quantum mechanics, particles like electrons can exist in multiple states at once, and entanglement allows particles to be connected, even if separated by vast distances."
+      ]
+    },
+    {
+      "tag": "biology",
+      "patterns": [
+        "Tell me about the human body",
+        "How does the heart work?",
+        "What is DNA?",
+        "What is photosynthesis?"
+      ],
+      "responses": [
+        "The human body is an amazing system of organs and tissues working together. The heart circulates blood, the brain controls functions, and cells use DNA as their instruction manual.",
+        "Photosynthesis is the process plants use to convert sunlight into energy. It's crucial for life on Earth as it produces oxygen and food for plants."
+      ]
+    },
+    {
+      "tag": "chemistry",
+      "patterns": [
+        "What is an atom?",
+        "Explain chemical reactions",
+        "What are acids and bases?",
+        "How do atoms bond?"
+      ],
+      "responses": [
+        "An atom is the basic unit of matter, made up of protons, neutrons, and electrons. Chemical reactions occur when atoms rearrange to form new substances.",
+        "Acids are substances that release hydrogen ions in water, and bases accept them. Atoms bond through covalent or ionic bonds to form molecules."
+      ]
+    },
+    {
+      "tag": "books",
+      "patterns": [
+        "Can you recommend some books?",
+        "What is a good book to read?",
+        "Tell me about classic literature",
+        "What book should I read for motivation?"
+      ],
+      "responses": [
+        "If you like fiction, try 'The Great Gatsby' or '1984'. For motivation, 'The Power of Now' by Eckhart Tolle is a great choice. 📚",
+        "Some of the best classic literature includes books like 'Moby Dick', 'Pride and Prejudice', and 'War and Peace'. If you're looking for something modern, 'The Catcher in the Rye' and 'To Kill a Mockingbird' are must-reads."
+      ]
+    },
+    {
+      "tag": "novels",
+      "patterns": [
+        "What are some great novels?",
+        "Tell me about popular novels",
+        "Can you recommend a thriller novel?",
+        "What is a must-read novel?"
+      ],
+      "responses": [
+        "'The Shining' by Stephen King is a great thriller. For a must-read, 'The Catcher in the Rye' is a timeless classic. If you enjoy fantasy, try 'Harry Potter' or 'Lord of the Rings'.",
+        "If you're into suspense, 'Gone Girl' by Gillian Flynn will keep you hooked. For an epic novel, check out 'War and Peace' by Tolstoy!"
+      ]
+    },
+    {
+      "tag": "gaming",
+      "patterns": [
+        "What video games do you recommend?",
+        "Tell me about the best games of all time",
+        "What are the most popular video games right now?",
+        "Can you suggest a fun game to play?"
+      ],
+      "responses": [
+        "For action-packed fun, try 'The Witcher 3', 'Red Dead Redemption 2', or 'God of War'. For multiplayer games, 'Among Us', 'Fortnite', and 'Minecraft' are always popular. 🎮",
+        "The best games of all time include 'The Legend of Zelda: Ocarina of Time', 'Super Mario 64', and 'Dark Souls'. Right now, 'Elden Ring' and 'Apex Legends' are huge hits!"
+      ]
+    },
+    {
+      "tag": "gaming_platforms",
+      "patterns": [
+        "What is the best gaming console?",
+        "Should I buy a PlayStation or Xbox?",
+        "What gaming platform should I use?",
+        "Can I play on PC or is console better?"
+      ],
+      "responses": [
+        "It depends on your preferences! PlayStation offers great exclusives like 'The Last of Us', while Xbox has Game Pass, which is great for access to many games. PC offers superior graphics and customization.",
+        "If you prefer portability, the Nintendo Switch is fantastic. But for high-performance gaming, PC might be your best bet!"
+      ]
+    }
+  ]
+}

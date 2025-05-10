@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f0f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #chatbox {
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      #chat-log {
+        flex-grow: 1;
+        overflow-y: auto;
+        max-height: 350px;
+        margin-bottom: 15px;
+        padding-right: 10px;
+      }
+
+      .message {
+        margin: 10px 0;
+        padding: 8px 12px;
+        border-radius: 20px;
+        max-width: 75%;
+      }
+
+      .user {
+        background-color: #d1e7ff;
+        align-self: flex-end;
+        color: #1a73e8;
+        text-align: right;
+      }
+
+      .bot {
+        background-color: #d8f1d2;
+        align-self: flex-start;
+        color: #2e7d32;
+        text-align: left;
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      input[type="text"] {
+        width: 80%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        font-size: 1rem;
+        margin-right: 10px;
+        outline: none;
+        transition: border 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        border-color: #1a73e8;
+      }
+
+      input[type="submit"] {
+        padding: 10px 15px;
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #155a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chatbox">
+      <h2>Jarvis 🤖</h2>
+      <div id="chat-log"></div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("chat-form").addEventListener("submit", sendMessage);
+
+      async function sendMessage(e) {
+        e.preventDefault();
+        const inputField = document.getElementById("user-input");
+        const message = inputField.value;
+        if (!message.trim()) return;
+
+        addMessage("You", message, "user");
+
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: message }),
+        });
+
+        const data = await response.json();
+        addMessage("Jarvis", data.reply, "bot");
+        inputField.value = "";
+      }
+
+      function addMessage(sender, message, className) {
+        const chatLog = document.getElementById("chat-log");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = `message ${className}`;
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
