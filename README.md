@@ -41,11 +41,13 @@ pip install -r requirements.txt
 Download NLTK data
 ```
 
-```bash
+```python
 import nltk
 nltk.download('punkt')
-Run the Flask app
 ```
+
+Run the Flask app
+
 
 ```bash
 
@@ -58,12 +60,9 @@ python app.py
 Visit http://127.0.0.1:5000/ in your web browser.
 
 **📚 Dependencies**
-Flask
 
-PyTorch
-
-NLTK
-
-Wikipedia
-
-NumPy
+    Flask
+    PyTorch
+    NLTK
+    Wikipedia
+    NumPy
