@@ -122,6 +122,7 @@
         e.preventDefault();
         const inputField = document.getElementById("user-input");
         const message = inputField.value;
+        inputField.value = "";
         if (!message.trim()) return;
 
         addMessage("You", message, "user");
