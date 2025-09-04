@@ -15,3 +15,4 @@ class NeuralNet(nn.Module):
         out = self.relu(out)
         out = self.l3(out)
         return out
+.
